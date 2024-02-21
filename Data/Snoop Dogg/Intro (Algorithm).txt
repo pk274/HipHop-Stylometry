@@ -1,4 +1,0 @@
-
-what is a algorithm?
-algorithm-algorithm-algorithm
-"algorithm," a process or set of rules to be followed in calculations or other problem solving operations. especially via computer

@@ -11,7 +11,7 @@ accessToken = {'Authorization': 'Bearer fIiVYTN75YvyJc8gXBBxmGG5huYxIs-Q_KpnywD7
 url = 'http://api.genius.com'
 
 # List of artists whose lyrics will be scraped
-artistNames = ['Snoop Dogg']
+artistNames = []
 
 
 def print_page():
