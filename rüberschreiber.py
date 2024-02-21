@@ -11,7 +11,7 @@ from os import remove
 
 dataPath = dirname(__file__) + '/Data/'
 #artistNames = ['Snoop Dogg', 'Eminem', 'Obie Trice', 'Kendrick Lamar', 'Dr. Dre', 'Jay-Z', 'Ice Cube']
-artistNames = ['Dr. Dre SOI', 'Eminem', 'Jay-Z', 'Kendrick Lamar', 'Snoop Dogg',]
+artistNames = ['Eminem', 'Jay-Z', 'Kendrick Lamar', 'Snoop Dogg',]
 
 def relocate_files():
         for artist in artistNames:
@@ -22,9 +22,48 @@ def relocate_files():
 
                 i = 0
                 for file in onlyfiles:
+
                         shutil.copy(dataPath + artistName + "/" + file, dataPath + 'corpus/' + artistTag + "_" + str(i))
                         #shutil.copy(dataPath + artistName + "/" + file, 'C:/Users/Paul/Desktop/Unistuff/1. sem/dh/dataset/' + artistName + '/' + file)
                         i += 1
+
+
+def relocate_and_group():
+        for artist in artistNames:
+                i = 0
+                cleanArtistName = re.sub('[<,>,:,",/,\,|,?,*]', '', artist)
+                with open(dirname(__file__) + '/00songs'+cleanArtistName+'.json', encoding='utf-8') as f:
+                        songs = json.load(f)
+
+                groupedSongs = []
+                for song in songs:
+                        primaryArtist = song['primary_artist']['name']
+                        if (primaryArtist.casefold() != artist.casefold()): continue
+                        songTitle = re.sub('[<,>,:,",/,\,|,?,*]', '', song['title'])
+                        if song in groupedSongs or not isfile(dataPath + artist+'/'+songTitle+'.txt'): continue
+                        releaseYear = song['release_date_components']
+                        if releaseYear is None:
+                                shutil.copy(dataPath + artist + "/" + songTitle + '.txt', dataPath + 'corpus/' + artist[0] + "_" + str(i))
+                                i += 1
+                                continue
+                        releaseYear = releaseYear['year']
+                        fYear = open(dataPath+'corpus/'+artist[0]+'_'+str(releaseYear)+'.txt', 'w', encoding='utf-8', errors='ignore')
+                        for song2 in songs:
+                                primaryArtist2 = song2['primary_artist']['name']
+                                if (primaryArtist2.casefold() != artist.casefold()): continue
+                                releaseYear2 = song2['release_date_components']
+                                if releaseYear2 is None: continue
+                                releaseYear2 = releaseYear2['year']
+                                if releaseYear2 != releaseYear: continue
+                                songTitle2 = re.sub('[<,>,:,",/,\,|,?,*]', '', song2['title'])
+                                if not isfile(dataPath + artist+'/'+songTitle2+'.txt'): continue
+                                fSong = open(dataPath + artist + "/" + songTitle2+'.txt', 'r', encoding='utf-8', errors='ignore')
+                                lyrics = fSong.read()
+                                fSong.close()
+                                fYear.write(lyrics)
+                                fYear.write('\n')
+                        fYear.close()
+
 
 def delete_small_files(minSize = 1000):
         onlyfiles = [f for f in listdir(dataPath + 'corpus') if isfile(join(dataPath + '/corpus', f))]
@@ -32,9 +71,9 @@ def delete_small_files(minSize = 1000):
         size = 0
         i = 0
         for file in onlyfiles:
-                size = getsize(dataPath + '/corpus' + file)
+                size = getsize(dataPath + '/corpus/' + file)
                 if size < minSize:
-                        remove(dataPath + '/corpus' + file)
+                        remove(dataPath + '/corpus/' + file)
                 i += 1
 
 def find_largest_files(numFiles = 50):
@@ -114,7 +153,7 @@ def delete_songs_by_date(yearDifference = 15):
                                         print("removed bc of none")
                                 continue
                         releaseYear = releaseYear['year']
-                        if abs(releaseYear - year) > yearDifference or releaseYear is None:
+                        if abs(releaseYear - year) > yearDifference or releaseYear is None or (artist == 'Kendrick Lamar' and releaseYear < 2006):
                                 if isfile(dataPath + artist+'/'+songTitle+'.txt'):
                                         remove(dataPath +artist+'/'+songTitle+'.txt')
                                         print('removed bc of year')
@@ -124,8 +163,9 @@ def delete_songs_by_date(yearDifference = 15):
 if __name__ == "__main__":
         #delete_features()
         #delete_unfit_versions()
-        #delete_small_files(800)
         #delete_songs_by_date()
-        find_largest_files(150)
-        relocate_files()
+        #find_largest_files(150)
+        #relocate_files()
+        relocate_and_group()
+        delete_small_files(15000)
         pass
