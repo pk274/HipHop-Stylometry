@@ -5,13 +5,16 @@ from bs4 import BeautifulSoup
 import json
 import re
 import os
+from os.path import dirname
 
 # Genius access token and genius api url
 accessToken = {'Authorization': 'Bearer fIiVYTN75YvyJc8gXBBxmGG5huYxIs-Q_KpnywD7T-Jkk5UfJSzCstr3ej3hKebK'}
 url = 'http://api.genius.com'
 
 # List of artists whose lyrics will be scraped
-artistNames = []
+artistNames = ['Taylor Swift', 'Eminem', 'Jay-Z', 'Kendrick Lamar', 'Snoop Dogg']
+
+dataPath = dirname(__file__)+'/'
 
 
 def print_page():
@@ -53,13 +56,15 @@ def find_artists_songs(artist):
     return songs
 
 
-def get_lyrics(songs, artist):
+def get_lyrics(songs, artist, prefilter = True):
     # Visit the lyrics page in the song information and scrape the lyrics
     i = 0
     for song in songs:
         title = song['title']
         titleCF = title.casefold()
-        if "Remix".casefold() in titleCF or "Version".casefold() in titleCF or "live".casefold() in titleCF or "acappella".casefold() in titleCF or "a cappella".casefold() in titleCF or "unplugged" in titleCF: continue             # In order to avoid duplicates
+        if prefilter:
+            if "Remix".casefold() in titleCF or "Version".casefold() in titleCF or "live".casefold() in titleCF or "acappella".casefold() in titleCF or "a cappella".casefold() in titleCF or "unplugged".casefold() in titleCF: continue             # In order to avoid duplicates
+            if song['primary_artist']['name'].casefold() != artist.casefold(): continue
         print("Song", i, "of", len(songs), ",", song['title'])
         url = song['url']
         page = requests.get(url)
@@ -73,7 +78,7 @@ def get_lyrics(songs, artist):
         i += 1
         if lyrics == "": continue                                       # Dont save empty files
         songTitle = re.sub('[<,>,:,",/,\,|,?,*]', '', song['title'])    # Remove forbidden symbols for paths
-        f = open('C:/Users/Paul/Desktop/Unistuff/1. sem/dh/dataset/'+artist+'/'+songTitle+'.txt', 'w', encoding='utf-8', errors='ignore')
+        f = open(dataPath+'/Data/'+artist+'/'+songTitle+'.txt', 'w', encoding='utf-8', errors='ignore')
         f.write(lyrics)
         f.close()
 
@@ -107,13 +112,13 @@ if __name__ == "__main__":
         j = 0
         print('Artist', j, 'of', len(artistNames), ':', artistName)
         print("Searching songs on Genius")
-        songs = find_artists_songs(artistName)
+        #songs = find_artists_songs(artistName)
         cleanArtistName = re.sub('[<,>,:,",/,\,|,?,*]', '', artistName)
-        os.makedirs(os.path.dirname('C:/Users/Paul/Desktop/Unistuff/1. sem/dh/dataset/'+cleanArtistName+'/00songs.json'), exist_ok=True)
-        with open('C:/Users/Paul/Desktop/Unistuff/1. sem/dh/dataset/'+cleanArtistName+'/00songs.json', 'w', encoding='utf-8') as f:
-            json.dump(songs, f, ensure_ascii=False, indent=4)
-        #with open('C:/Users/Paul/Desktop/Unistuff/1. sem/dh/dataset/'+cleanArtistName+'/00songs.json', encoding='utf-8') as f:
-        #    songs = json.load(f)
+        #os.makedirs(os.path.dirname(dataPath+'/Data/'+cleanArtistName+'/00songs.json'), exist_ok=True)
+        #with open(dataPath+'00songs'+cleanArtistName+'.json', 'w', encoding='utf-8') as f:
+        #    json.dump(songs, f, ensure_ascii=False, indent=4)
+        with open(dataPath+'00songs'+cleanArtistName+'.json', encoding='utf-8') as f:
+            songs = json.load(f)
         print("Songs found, extracting lyrics now")
         get_lyrics(songs, artistName)
         j += 1
