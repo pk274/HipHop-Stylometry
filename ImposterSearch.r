@@ -1,4 +1,4 @@
-# Paul Kull, 2022
+# Paul Kull, 2024
 
 library("stylo")
 
