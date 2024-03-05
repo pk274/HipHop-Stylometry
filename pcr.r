@@ -2,7 +2,8 @@
 
 library("stylo")
 
-setwd("C:/Users/paulk/OneDrive/Desktop/Unistuff/1.sem/dh/HipHop-Stylometry/Data/corpus")
+setwd("C:/Users/Paul/Desktop/Unistuff/1. sem/dh/HipHop-Stylometry/Data/corpus")
+#setwd("C:/Users/paulk/OneDrive/Desktop/Unistuff/1.sem/dh/HipHop-Stylometry/Data/corpus")
 
 tokenized.texts = load.corpus.and.parse(files = "all", corpus.lang = "English.all", preserve.case = "FALSE", ngram.size = 1)
 
@@ -15,4 +16,4 @@ filtered.data <- delete.stop.words(data, stop.words = stylo.pronouns(corpus.lang
 culled.data <- perform.culling(filtered.data, culling.level = 20)
 
 stylo(gui = FALSE, analysis.type = "PCR", frequencies= culled.data, mfw.min = 1500, mfw.max = 1500, culling.min = 20, culling.max = 20,
- distance = "delta", delete.pronouns = TRUE, custom.graph.title = "Cross-genre")
+ distance = "delta", delete.pronouns = TRUE, custom.graph.title = "Short lyrics")

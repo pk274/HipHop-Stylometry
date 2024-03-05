@@ -13,8 +13,8 @@ dataPath = dirname(__file__) + '/Data/'
 tablePath = dirname(__file__) + '/'
 
 #artistNames = ['Snoop Dogg', 'Eminem', 'Obie Trice', 'Kendrick Lamar', 'Dr. Dre', 'Jay-Z', 'Ice Cube']
-#artistNames = ['Eminem', 'Jay-Z', 'Kendrick Lamar', 'Snoop Dogg', 'Dr. Dre']
-artistNames = ['Eminem', 'Jay-Z', 'Kendrick Lamar', 'Snoop Dogg']
+artistNames = ['Eminem', 'Jay-Z', 'Kendrick Lamar', 'Snoop Dogg', 'Dr. Dre']
+#artistNames = ['Eminem', 'Jay-Z', 'Kendrick Lamar', 'Snoop Dogg']
 #artistNames = ['Dr. Dre']
 #artistNames = ['Taylor Swift', 'Bob Dylan', 'Eminem', 'Jay-Z', 'Kendrick Lamar', 'Snoop Dogg']
 
@@ -240,8 +240,8 @@ if __name__ == "__main__":
         #find_largest_files(250)
         #relocate_files()
         #delete_small_files(1300)
-        #relocate_and_group_by_year(False)
-        delete_small_files(15000)
+        relocate_and_group_by_year(False)
+        delete_small_files(5000)
 
         #artistNames = ['Dr. Dre SOI']
         #relocate_files()
