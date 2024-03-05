@@ -12,7 +12,7 @@ accessToken = {'Authorization': 'Bearer fIiVYTN75YvyJc8gXBBxmGG5huYxIs-Q_KpnywD7
 url = 'http://api.genius.com'
 
 # List of artists whose lyrics will be scraped
-artistNames = ['Taylor Swift', 'Eminem', 'Jay-Z', 'Kendrick Lamar', 'Snoop Dogg']
+#artistNames = ['Taylor Swift', 'Eminem', 'Jay-Z', 'Kendrick Lamar', 'Snoop Dogg']
 
 dataPath = dirname(__file__)+'/'
 
@@ -35,6 +35,7 @@ def find_artists_songs(artist):
     for hit in jsonPage['response']['hits']:
         if hit['result']['primary_artist']['name'] == artistName:
             artistSuffix = hit['result']['primary_artist']['api_path']
+            print(artistSuffix)
             break
     artistPage = url + artistSuffix + '/songs/'
 
@@ -112,13 +113,13 @@ if __name__ == "__main__":
         j = 0
         print('Artist', j, 'of', len(artistNames), ':', artistName)
         print("Searching songs on Genius")
-        #songs = find_artists_songs(artistName)
+        songs = find_artists_songs(artistName)
         cleanArtistName = re.sub('[<,>,:,",/,\,|,?,*]', '', artistName)
-        #os.makedirs(os.path.dirname(dataPath+'/Data/'+cleanArtistName+'/00songs.json'), exist_ok=True)
-        #with open(dataPath+'00songs'+cleanArtistName+'.json', 'w', encoding='utf-8') as f:
-        #    json.dump(songs, f, ensure_ascii=False, indent=4)
-        with open(dataPath+'00songs'+cleanArtistName+'.json', encoding='utf-8') as f:
-            songs = json.load(f)
+        os.makedirs(os.path.dirname(dataPath+'/Data/'+cleanArtistName+'/00songs.json'), exist_ok=True)
+        with open(dataPath+'00songs'+cleanArtistName+'.json', 'w', encoding='utf-8') as f:
+            json.dump(songs, f, ensure_ascii=False, indent=4)
+        #with open(dataPath+'00songs'+cleanArtistName+'.json', encoding='utf-8') as f:
+        #    songs = json.load(f)
         print("Songs found, extracting lyrics now")
         get_lyrics(songs, artistName)
         j += 1

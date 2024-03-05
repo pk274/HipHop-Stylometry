@@ -1,0 +1,86 @@
+ONE GRAMS
+
+[1] 0.25 0.63
+ImposterSearch.r:20
+[1] "Still DRE (Jay-Z):"
+
+Testing a given candidate against imposters...
+
+Eminem 	 0
+Jay-Z 	 0.01
+Kendrick Lamar 	 0.11
+Snoop Dogg 	 0.86
+
+[1] "Deep Cover (Snoop Dogg):"
+
+
+Testing a given candidate against imposters...
+
+Eminem 	 0.01
+Jay-Z 	 0
+Kendrick Lamar 	 0
+Snoop Dogg 	 0.93
+
+[1] "Forgot about Dre, What's the Difference and Crack a Bottle (Eminem):"
+
+Testing a given candidate against imposters...
+
+Eminem 	 0.86
+Jay-Z 	 0.01
+Kendrick Lamar 	 0.04
+Snoop Dogg 	 0.15
+
+1] "The Recipe and Compton (Kendrick Lamar):"
+
+Testing a given candidate against imposters...
+
+Eminem 	 0.11
+Jay-Z 	 0.03
+Kendrick Lamar 	 0.11
+Snoop Dogg 	 0.78
+
+
+
+
+
+
+
+TWO GRAMS
+
+1] 0.28 0.52
+ImposterSearch.r:20
+[1] "Still DRE (Jay-Z):"
+Testing a given candidate against imposters...
+
+Eminem 	 0.15
+Jay-Z 	 0.27
+Kendrick Lamar 	 0.14
+Snoop Dogg 	 0.44
+
+1] "Deep Cover (Snoop Dogg):"
+
+Testing a given candidate against imposters...
+
+Eminem 	 0.09
+Jay-Z 	 0.36
+Kendrick Lamar 	 0.02
+Snoop Dogg 	 0.4
+
+1] "Forgot about Dre, What's the Difference and Crack a Bottle (Eminem):"
+
+Testing a given candidate against imposters...
+
+Eminem 	 0.33
+Jay-Z 	 0.62
+Kendrick Lamar 	 0.02
+Snoop Dogg 	 0.03
+
+1] "The Recipe and Compton (Kendrick Lamar):"
+
+
+Testing a given candidate against imposters...
+
+Eminem 	 0.2
+Jay-Z 	 0.13
+Kendrick Lamar 	 0.36
+Snoop Dogg 	 0.25

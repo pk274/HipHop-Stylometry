@@ -13,8 +13,10 @@ dataPath = dirname(__file__) + '/Data/'
 tablePath = dirname(__file__) + '/'
 
 #artistNames = ['Snoop Dogg', 'Eminem', 'Obie Trice', 'Kendrick Lamar', 'Dr. Dre', 'Jay-Z', 'Ice Cube']
-#artistNames = ['Eminem', 'Jay-Z', 'Kendrick Lamar', 'Snoop Dogg']
-artistNames = ['Taylor Swift', 'Bob Dylan', 'Eminem', 'Jay-Z', 'Kendrick Lamar', 'Snoop Dogg']
+#artistNames = ['Eminem', 'Jay-Z', 'Kendrick Lamar', 'Snoop Dogg', 'Dr. Dre']
+artistNames = ['Eminem', 'Jay-Z', 'Kendrick Lamar', 'Snoop Dogg']
+#artistNames = ['Dr. Dre']
+#artistNames = ['Taylor Swift', 'Bob Dylan', 'Eminem', 'Jay-Z', 'Kendrick Lamar', 'Snoop Dogg']
 
 def relocate_files(addSOI = True):
         for artist in artistNames:
@@ -55,7 +57,10 @@ def relocate_and_group_by_year(addSOI = True):
                                 i += 1
                                 continue
                         releaseYear = releaseYear['year']
-                        fYear = open(dataPath+'corpus/'+artist+'_'+str(releaseYear)+'.txt', 'w', encoding='utf-8', errors='ignore')
+                        if (artist == 'Bob Dylan' or artist == 'Taylor Swift'):
+                                fYear = open(dataPath+'corpus/Songs '+artist+'_'+str(releaseYear)+'.txt', 'w', encoding='utf-8', errors='ignore')
+                        else:
+                                fYear = open(dataPath+'corpus/'+artist+'_'+str(releaseYear)+'.txt', 'w', encoding='utf-8', errors='ignore')
                         for song2 in songs:
                                 primaryArtist2 = song2['primary_artist']['name']
                                 if (primaryArtist2.casefold() != artist.casefold()): continue
@@ -232,9 +237,12 @@ if __name__ == "__main__":
         #delete_unfit_versions()
         #delete_duplicates()
         #delete_songs_by_date()
-        #find_largest_files(200)
+        #find_largest_files(250)
         #relocate_files()
-        #delete_small_files(1500)
-        relocate_and_group_by_year(False)
+        #delete_small_files(1300)
+        #relocate_and_group_by_year(False)
         delete_small_files(15000)
+
+        #artistNames = ['Dr. Dre SOI']
+        #relocate_files()
         pass

@@ -1,0 +1,333 @@
+Source,Target,Weight,Type
+Dre(Em)_Crack a Bottle,Dre(Em)_Forgot About Dre,4,undirected
+Dre(Em)_Crack a Bottle,Dre(Em)_What’s the Difference,3,undirected
+Dre(Em)_Crack a Bottle,Dre(Jay)_Still D.R.E.,5,undirected
+Dre(Em)_Crack a Bottle,Dre(Kendrick)_The Recipe,6,undirected
+Dre(Em)_Crack a Bottle,Dre(Snoop)_Deep Cover,3,undirected
+Dre(Em)_Crack a Bottle,Eminem_1996,3,undirected
+Dre(Em)_Crack a Bottle,Jay-Z_2008,1,undirected
+Dre(Em)_Crack a Bottle,Snoop Dogg_2004,1,undirected
+Dre(Em)_Crack a Bottle,Snoop Dogg_2007,3,undirected
+Dre(Em)_Crack a Bottle,Snoop Dogg_2010,1,undirected
+Dre(Em)_Crack a Bottle,Snoop Dogg_2015,3,undirected
+Dre(Em)_Crack a Bottle,Snoop Dogg_2021,2,undirected
+Dre(Em)_Forgot About Dre,Dre(Em)_Crack a Bottle,4,undirected
+Dre(Em)_Forgot About Dre,Dre(Em)_What’s the Difference,1,undirected
+Dre(Em)_Forgot About Dre,Dre(Jay)_Still D.R.E.,2,undirected
+Dre(Em)_Forgot About Dre,Dre(Kendrick)_The Recipe,2,undirected
+Dre(Em)_Forgot About Dre,Dre(Snoop)_Deep Cover,1,undirected
+Dre(Em)_What’s the Difference,Dre(Em)_Crack a Bottle,3,undirected
+Dre(Em)_What’s the Difference,Dre(Em)_Forgot About Dre,1,undirected
+Dre(Em)_What’s the Difference,Dre(Kendrick)_The Recipe,3,undirected
+Dre(Jay)_Still D.R.E.,Dre(Em)_Crack a Bottle,5,undirected
+Dre(Jay)_Still D.R.E.,Dre(Em)_Forgot About Dre,2,undirected
+Dre(Jay)_Still D.R.E.,Dre(Kendrick)_The Recipe,4,undirected
+Dre(Kendrick)_The Recipe,Dre(Em)_Crack a Bottle,6,undirected
+Dre(Kendrick)_The Recipe,Dre(Em)_Forgot About Dre,2,undirected
+Dre(Kendrick)_The Recipe,Dre(Em)_What’s the Difference,3,undirected
+Dre(Kendrick)_The Recipe,Dre(Jay)_Still D.R.E.,4,undirected
+Dre(Kendrick)_The Recipe,Dre(Snoop)_Deep Cover,2,undirected
+Dre(Kendrick)_The Recipe,Eminem_1996,2,undirected
+Dre(Kendrick)_The Recipe,Snoop Dogg_2007,1,undirected
+Dre(Kendrick)_The Recipe,Snoop Dogg_2009,2,undirected
+Dre(Kendrick)_The Recipe,Snoop Dogg_2010,2,undirected
+Dre(Kendrick)_The Recipe,Snoop Dogg_2015,2,undirected
+Dre(Kendrick)_The Recipe,Snoop Dogg_2021,1,undirected
+Dre(Snoop)_Deep Cover,Dre(Em)_Crack a Bottle,3,undirected
+Dre(Snoop)_Deep Cover,Dre(Em)_Forgot About Dre,1,undirected
+Dre(Snoop)_Deep Cover,Dre(Kendrick)_The Recipe,2,undirected
+Eminem_1996,Dre(Em)_Crack a Bottle,3,undirected
+Eminem_1996,Dre(Kendrick)_The Recipe,2,undirected
+Eminem_1996,Snoop Dogg_2017,1,undirected
+Eminem_1997,Eminem_1998,2,undirected
+Eminem_1997,Eminem_1999,3,undirected
+Eminem_1997,Eminem_2013,2,undirected
+Eminem_1997,Eminem_2020,1,undirected
+Eminem_1998,Eminem_1997,2,undirected
+Eminem_1998,Eminem_1999,3,undirected
+Eminem_1998,Eminem_2013,1,undirected
+Eminem_1999,Eminem_1997,3,undirected
+Eminem_1999,Eminem_1998,3,undirected
+Eminem_1999,Eminem_2000,4,undirected
+Eminem_1999,Eminem_2003,2,undirected
+Eminem_1999,Eminem_2010,1,undirected
+Eminem_1999,Eminem_2013,3,undirected
+Eminem_2000,Eminem_1999,4,undirected
+Eminem_2000,Eminem_2013,3,undirected
+Eminem_2000,Eminem_2020,1,undirected
+Eminem_2002,Eminem_2003,3,undirected
+Eminem_2002,Eminem_2004,1,undirected
+Eminem_2002,Eminem_2010,2,undirected
+Eminem_2002,Eminem_2013,3,undirected
+Eminem_2003,Eminem_1999,2,undirected
+Eminem_2003,Eminem_2002,3,undirected
+Eminem_2003,Eminem_2013,1,undirected
+Eminem_2004,Eminem_2002,1,undirected
+Eminem_2004,Eminem_2009,2,undirected
+Eminem_2004,Eminem_2013,3,undirected
+Eminem_2004,Eminem_2020,1,undirected
+Eminem_2009,Eminem_2004,2,undirected
+Eminem_2009,Eminem_2010,1,undirected
+Eminem_2009,Eminem_2013,3,undirected
+Eminem_2009,Eminem_2014,2,undirected
+Eminem_2009,Eminem_2020,2,undirected
+Eminem_2010,Eminem_1999,1,undirected
+Eminem_2010,Eminem_2002,2,undirected
+Eminem_2010,Eminem_2009,1,undirected
+Eminem_2010,Eminem_2011,2,undirected
+Eminem_2010,Eminem_2013,5,undirected
+Eminem_2010,Eminem_2017,2,undirected
+Eminem_2010,Eminem_2018,1,undirected
+Eminem_2010,Eminem_2020,4,undirected
+Eminem_2011,Eminem_2010,2,undirected
+Eminem_2011,Eminem_2013,1,undirected
+Eminem_2011,Eminem_2018,3,undirected
+Eminem_2013,Eminem_1997,2,undirected
+Eminem_2013,Eminem_1998,1,undirected
+Eminem_2013,Eminem_1999,3,undirected
+Eminem_2013,Eminem_2000,3,undirected
+Eminem_2013,Eminem_2002,3,undirected
+Eminem_2013,Eminem_2003,1,undirected
+Eminem_2013,Eminem_2004,3,undirected
+Eminem_2013,Eminem_2009,3,undirected
+Eminem_2013,Eminem_2010,5,undirected
+Eminem_2013,Eminem_2011,1,undirected
+Eminem_2013,Eminem_2014,3,undirected
+Eminem_2013,Eminem_2017,3,undirected
+Eminem_2013,Eminem_2018,4,undirected
+Eminem_2013,Eminem_2020,6,undirected
+Eminem_2013,Jay-Z_2003,1,undirected
+Eminem_2013,Jay-Z_2017,2,undirected
+Eminem_2014,Eminem_2009,2,undirected
+Eminem_2014,Eminem_2013,3,undirected
+Eminem_2014,Eminem_2020,1,undirected
+Eminem_2017,Eminem_2010,2,undirected
+Eminem_2017,Eminem_2013,3,undirected
+Eminem_2017,Eminem_2020,2,undirected
+Eminem_2018,Eminem_2010,1,undirected
+Eminem_2018,Eminem_2011,3,undirected
+Eminem_2018,Eminem_2013,4,undirected
+Eminem_2018,Eminem_2020,3,undirected
+Eminem_2020,Eminem_1997,1,undirected
+Eminem_2020,Eminem_2000,1,undirected
+Eminem_2020,Eminem_2004,1,undirected
+Eminem_2020,Eminem_2009,2,undirected
+Eminem_2020,Eminem_2010,4,undirected
+Eminem_2020,Eminem_2013,6,undirected
+Eminem_2020,Eminem_2014,1,undirected
+Eminem_2020,Eminem_2017,2,undirected
+Eminem_2020,Eminem_2018,3,undirected
+Eminem_2020,Kendrick Lamar_2009,1,undirected
+Jay-Z_1996,Jay-Z_1997,5,undirected
+Jay-Z_1996,Jay-Z_1998,1,undirected
+Jay-Z_1996,Jay-Z_1999,2,undirected
+Jay-Z_1996,Jay-Z_2002,1,undirected
+Jay-Z_1997,Jay-Z_1996,5,undirected
+Jay-Z_1997,Jay-Z_1998,6,undirected
+Jay-Z_1997,Jay-Z_1999,2,undirected
+Jay-Z_1997,Jay-Z_2000,1,undirected
+Jay-Z_1998,Jay-Z_1996,1,undirected
+Jay-Z_1998,Jay-Z_1997,6,undirected
+Jay-Z_1998,Jay-Z_1999,2,undirected
+Jay-Z_1999,Jay-Z_1996,2,undirected
+Jay-Z_1999,Jay-Z_1997,2,undirected
+Jay-Z_1999,Jay-Z_1998,2,undirected
+Jay-Z_1999,Jay-Z_2000,3,undirected
+Jay-Z_1999,Jay-Z_2001,1,undirected
+Jay-Z_1999,Jay-Z_2002,5,undirected
+Jay-Z_1999,Jay-Z_2003,2,undirected
+Jay-Z_2000,Jay-Z_1997,1,undirected
+Jay-Z_2000,Jay-Z_1999,3,undirected
+Jay-Z_2000,Jay-Z_2002,2,undirected
+Jay-Z_2001,Jay-Z_1999,1,undirected
+Jay-Z_2001,Jay-Z_2002,2,undirected
+Jay-Z_2001,Jay-Z_2003,3,undirected
+Jay-Z_2002,Jay-Z_1996,1,undirected
+Jay-Z_2002,Jay-Z_1999,5,undirected
+Jay-Z_2002,Jay-Z_2000,2,undirected
+Jay-Z_2002,Jay-Z_2001,2,undirected
+Jay-Z_2002,Jay-Z_2003,6,undirected
+Jay-Z_2002,Jay-Z_2006,2,undirected
+Jay-Z_2002,Jay-Z_2013,1,undirected
+Jay-Z_2002,Jay-Z_2017,1,undirected
+Jay-Z_2002,Kendrick Lamar_2004,2,undirected
+Jay-Z_2002,Kendrick Lamar_2009,1,undirected
+Jay-Z_2003,Eminem_2013,1,undirected
+Jay-Z_2003,Jay-Z_1999,2,undirected
+Jay-Z_2003,Jay-Z_2001,3,undirected
+Jay-Z_2003,Jay-Z_2002,6,undirected
+Jay-Z_2003,Jay-Z_2006,3,undirected
+Jay-Z_2003,Jay-Z_2007,2,undirected
+Jay-Z_2003,Jay-Z_2009,2,undirected
+Jay-Z_2003,Kendrick Lamar_2005,2,undirected
+Jay-Z_2003,Kendrick Lamar_2009,2,undirected
+Jay-Z_2006,Jay-Z_2002,2,undirected
+Jay-Z_2006,Jay-Z_2003,3,undirected
+Jay-Z_2006,Jay-Z_2007,1,undirected
+Jay-Z_2006,Jay-Z_2008,3,undirected
+Jay-Z_2006,Jay-Z_2009,3,undirected
+Jay-Z_2006,Jay-Z_2013,2,undirected
+Jay-Z_2006,Kendrick Lamar_2009,1,undirected
+Jay-Z_2007,Jay-Z_2003,2,undirected
+Jay-Z_2007,Jay-Z_2006,1,undirected
+Jay-Z_2007,Kendrick Lamar_2010,3,undirected
+Jay-Z_2008,Dre(Em)_Crack a Bottle,1,undirected
+Jay-Z_2008,Jay-Z_2006,3,undirected
+Jay-Z_2008,Kendrick Lamar_2010,2,undirected
+Jay-Z_2009,Jay-Z_2003,2,undirected
+Jay-Z_2009,Jay-Z_2006,3,undirected
+Jay-Z_2009,Kendrick Lamar_2010,1,undirected
+Jay-Z_2013,Jay-Z_2002,1,undirected
+Jay-Z_2013,Jay-Z_2006,2,undirected
+Jay-Z_2013,Kendrick Lamar_2010,3,undirected
+Jay-Z_2017,Eminem_2013,2,undirected
+Jay-Z_2017,Jay-Z_2002,1,undirected
+Jay-Z_2017,Kendrick Lamar_2022,3,undirected
+Kendrick Lamar_2004,Jay-Z_2002,2,undirected
+Kendrick Lamar_2004,Kendrick Lamar_2010,3,undirected
+Kendrick Lamar_2004,Kendrick Lamar_2015,1,undirected
+Kendrick Lamar_2005,Jay-Z_2003,2,undirected
+Kendrick Lamar_2005,Kendrick Lamar_2009,3,undirected
+Kendrick Lamar_2005,Kendrick Lamar_2010,1,undirected
+Kendrick Lamar_2009,Eminem_2020,1,undirected
+Kendrick Lamar_2009,Jay-Z_2002,1,undirected
+Kendrick Lamar_2009,Jay-Z_2003,2,undirected
+Kendrick Lamar_2009,Jay-Z_2006,1,undirected
+Kendrick Lamar_2009,Kendrick Lamar_2005,3,undirected
+Kendrick Lamar_2009,Kendrick Lamar_2010,6,undirected
+Kendrick Lamar_2009,Kendrick Lamar_2011,3,undirected
+Kendrick Lamar_2009,Kendrick Lamar_2012,5,undirected
+Kendrick Lamar_2009,Kendrick Lamar_2014,2,undirected
+Kendrick Lamar_2009,Kendrick Lamar_2015,3,undirected
+Kendrick Lamar_2009,Kendrick Lamar_2017,2,undirected
+Kendrick Lamar_2009,Kendrick Lamar_2022,2,undirected
+Kendrick Lamar_2010,Jay-Z_2007,3,undirected
+Kendrick Lamar_2010,Jay-Z_2008,2,undirected
+Kendrick Lamar_2010,Jay-Z_2009,1,undirected
+Kendrick Lamar_2010,Jay-Z_2013,3,undirected
+Kendrick Lamar_2010,Kendrick Lamar_2004,3,undirected
+Kendrick Lamar_2010,Kendrick Lamar_2005,1,undirected
+Kendrick Lamar_2010,Kendrick Lamar_2009,6,undirected
+Kendrick Lamar_2010,Kendrick Lamar_2011,4,undirected
+Kendrick Lamar_2010,Kendrick Lamar_2014,1,undirected
+Kendrick Lamar_2010,Kendrick Lamar_2015,2,undirected
+Kendrick Lamar_2010,Kendrick Lamar_2016,3,undirected
+Kendrick Lamar_2011,Kendrick Lamar_2009,3,undirected
+Kendrick Lamar_2011,Kendrick Lamar_2010,4,undirected
+Kendrick Lamar_2011,Kendrick Lamar_2012,2,undirected
+Kendrick Lamar_2012,Kendrick Lamar_2009,5,undirected
+Kendrick Lamar_2012,Kendrick Lamar_2011,2,undirected
+Kendrick Lamar_2012,Kendrick Lamar_2015,4,undirected
+Kendrick Lamar_2014,Kendrick Lamar_2009,2,undirected
+Kendrick Lamar_2014,Kendrick Lamar_2010,1,undirected
+Kendrick Lamar_2014,Kendrick Lamar_2015,3,undirected
+Kendrick Lamar_2015,Kendrick Lamar_2004,1,undirected
+Kendrick Lamar_2015,Kendrick Lamar_2009,3,undirected
+Kendrick Lamar_2015,Kendrick Lamar_2010,2,undirected
+Kendrick Lamar_2015,Kendrick Lamar_2012,4,undirected
+Kendrick Lamar_2015,Kendrick Lamar_2014,3,undirected
+Kendrick Lamar_2015,Kendrick Lamar_2016,2,undirected
+Kendrick Lamar_2015,Kendrick Lamar_2017,1,undirected
+Kendrick Lamar_2015,Kendrick Lamar_2022,1,undirected
+Kendrick Lamar_2016,Kendrick Lamar_2010,3,undirected
+Kendrick Lamar_2016,Kendrick Lamar_2015,2,undirected
+Kendrick Lamar_2016,Kendrick Lamar_2017,1,undirected
+Kendrick Lamar_2017,Kendrick Lamar_2009,2,undirected
+Kendrick Lamar_2017,Kendrick Lamar_2015,1,undirected
+Kendrick Lamar_2017,Kendrick Lamar_2016,1,undirected
+Kendrick Lamar_2017,Kendrick Lamar_2022,6,undirected
+Kendrick Lamar_2022,Jay-Z_2017,3,undirected
+Kendrick Lamar_2022,Kendrick Lamar_2009,2,undirected
+Kendrick Lamar_2022,Kendrick Lamar_2015,1,undirected
+Kendrick Lamar_2022,Kendrick Lamar_2017,6,undirected
+Snoop Dogg_1993,Snoop Dogg_1998,3,undirected
+Snoop Dogg_1993,Snoop Dogg_1999,3,undirected
+Snoop Dogg_1993,Snoop Dogg_2003,1,undirected
+Snoop Dogg_1996,Snoop Dogg_1998,3,undirected
+Snoop Dogg_1996,Snoop Dogg_2003,1,undirected
+Snoop Dogg_1996,Snoop Dogg_2017,3,undirected
+Snoop Dogg_1996,Snoop Dogg_2022,1,undirected
+Snoop Dogg_1998,Snoop Dogg_1993,3,undirected
+Snoop Dogg_1998,Snoop Dogg_1996,3,undirected
+Snoop Dogg_1998,Snoop Dogg_1999,6,undirected
+Snoop Dogg_1998,Snoop Dogg_2000,2,undirected
+Snoop Dogg_1998,Snoop Dogg_2002,1,undirected
+Snoop Dogg_1998,Snoop Dogg_2003,2,undirected
+Snoop Dogg_1998,Snoop Dogg_2006,2,undirected
+Snoop Dogg_1999,Snoop Dogg_1993,3,undirected
+Snoop Dogg_1999,Snoop Dogg_1998,6,undirected
+Snoop Dogg_1999,Snoop Dogg_2000,3,undirected
+Snoop Dogg_1999,Snoop Dogg_2017,2,undirected
+Snoop Dogg_2000,Snoop Dogg_1998,2,undirected
+Snoop Dogg_2000,Snoop Dogg_1999,3,undirected
+Snoop Dogg_2000,Snoop Dogg_2017,1,undirected
+Snoop Dogg_2002,Snoop Dogg_1998,1,undirected
+Snoop Dogg_2002,Snoop Dogg_2003,3,undirected
+Snoop Dogg_2002,Snoop Dogg_2017,2,undirected
+Snoop Dogg_2003,Snoop Dogg_1993,1,undirected
+Snoop Dogg_2003,Snoop Dogg_1996,1,undirected
+Snoop Dogg_2003,Snoop Dogg_1998,2,undirected
+Snoop Dogg_2003,Snoop Dogg_2002,3,undirected
+Snoop Dogg_2003,Snoop Dogg_2004,5,undirected
+Snoop Dogg_2003,Snoop Dogg_2006,1,undirected
+Snoop Dogg_2003,Snoop Dogg_2008,3,undirected
+Snoop Dogg_2003,Snoop Dogg_2009,1,undirected
+Snoop Dogg_2003,Snoop Dogg_2017,3,undirected
+Snoop Dogg_2003,Snoop Dogg_2019,4,undirected
+Snoop Dogg_2003,Snoop Dogg_2021,3,undirected
+Snoop Dogg_2003,Snoop Dogg_2022,2,undirected
+Snoop Dogg_2004,Dre(Em)_Crack a Bottle,1,undirected
+Snoop Dogg_2004,Snoop Dogg_2003,5,undirected
+Snoop Dogg_2004,Snoop Dogg_2008,1,undirected
+Snoop Dogg_2004,Snoop Dogg_2011,1,undirected
+Snoop Dogg_2004,Snoop Dogg_2015,1,undirected
+Snoop Dogg_2004,Snoop Dogg_2016,2,undirected
+Snoop Dogg_2004,Snoop Dogg_2017,6,undirected
+Snoop Dogg_2006,Snoop Dogg_1998,2,undirected
+Snoop Dogg_2006,Snoop Dogg_2003,1,undirected
+Snoop Dogg_2006,Snoop Dogg_2017,5,undirected
+Snoop Dogg_2007,Dre(Em)_Crack a Bottle,3,undirected
+Snoop Dogg_2007,Dre(Kendrick)_The Recipe,1,undirected
+Snoop Dogg_2007,Snoop Dogg_2017,2,undirected
+Snoop Dogg_2008,Snoop Dogg_2003,3,undirected
+Snoop Dogg_2008,Snoop Dogg_2004,1,undirected
+Snoop Dogg_2008,Snoop Dogg_2017,2,undirected
+Snoop Dogg_2009,Dre(Kendrick)_The Recipe,2,undirected
+Snoop Dogg_2009,Snoop Dogg_2003,1,undirected
+Snoop Dogg_2009,Snoop Dogg_2010,3,undirected
+Snoop Dogg_2009,Snoop Dogg_2011,3,undirected
+Snoop Dogg_2010,Dre(Em)_Crack a Bottle,1,undirected
+Snoop Dogg_2010,Dre(Kendrick)_The Recipe,2,undirected
+Snoop Dogg_2010,Snoop Dogg_2009,3,undirected
+Snoop Dogg_2011,Snoop Dogg_2004,1,undirected
+Snoop Dogg_2011,Snoop Dogg_2009,3,undirected
+Snoop Dogg_2011,Snoop Dogg_2016,6,undirected
+Snoop Dogg_2011,Snoop Dogg_2017,2,undirected
+Snoop Dogg_2015,Dre(Em)_Crack a Bottle,3,undirected
+Snoop Dogg_2015,Dre(Kendrick)_The Recipe,2,undirected
+Snoop Dogg_2015,Snoop Dogg_2004,1,undirected
+Snoop Dogg_2016,Snoop Dogg_2004,2,undirected
+Snoop Dogg_2016,Snoop Dogg_2011,6,undirected
+Snoop Dogg_2016,Snoop Dogg_2017,1,undirected
+Snoop Dogg_2017,Eminem_1996,1,undirected
+Snoop Dogg_2017,Snoop Dogg_1996,3,undirected
+Snoop Dogg_2017,Snoop Dogg_1999,2,undirected
+Snoop Dogg_2017,Snoop Dogg_2000,1,undirected
+Snoop Dogg_2017,Snoop Dogg_2002,2,undirected
+Snoop Dogg_2017,Snoop Dogg_2003,3,undirected
+Snoop Dogg_2017,Snoop Dogg_2004,6,undirected
+Snoop Dogg_2017,Snoop Dogg_2006,5,undirected
+Snoop Dogg_2017,Snoop Dogg_2007,2,undirected
+Snoop Dogg_2017,Snoop Dogg_2008,2,undirected
+Snoop Dogg_2017,Snoop Dogg_2011,2,undirected
+Snoop Dogg_2017,Snoop Dogg_2016,1,undirected
+Snoop Dogg_2017,Snoop Dogg_2019,2,undirected
+Snoop Dogg_2019,Snoop Dogg_2003,4,undirected
+Snoop Dogg_2019,Snoop Dogg_2017,2,undirected
+Snoop Dogg_2019,Snoop Dogg_2022,4,undirected
+Snoop Dogg_2021,Dre(Em)_Crack a Bottle,2,undirected
+Snoop Dogg_2021,Dre(Kendrick)_The Recipe,1,undirected
+Snoop Dogg_2021,Snoop Dogg_2003,3,undirected
+Snoop Dogg_2022,Snoop Dogg_1996,1,undirected
+Snoop Dogg_2022,Snoop Dogg_2003,2,undirected
+Snoop Dogg_2022,Snoop Dogg_2019,4,undirected
