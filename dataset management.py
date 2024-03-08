@@ -13,9 +13,9 @@ dataPath = dirname(__file__) + '/Data/'
 tablePath = dirname(__file__) + '/'
 
 #artistNames = ['Snoop Dogg', 'Eminem', 'Obie Trice', 'Kendrick Lamar', 'Dr. Dre', 'Jay-Z', 'Ice Cube']
-artistNames = ['Eminem', 'Jay-Z', 'Kendrick Lamar', 'Snoop Dogg', 'Dr. Dre']
-#artistNames = ['Eminem', 'Jay-Z', 'Kendrick Lamar', 'Snoop Dogg']
-#artistNames = ['Dr. Dre']
+#artistNames = ['Eminem', 'Jay-Z', 'Kendrick Lamar', 'Snoop Dogg', 'Dr. Dre']
+artistNames = ['Eminem', 'Jay-Z', 'Kendrick Lamar', 'Snoop Dogg']
+#artistNames = ['Eminem', 'Snoop Dogg']
 #artistNames = ['Taylor Swift', 'Bob Dylan', 'Eminem', 'Jay-Z', 'Kendrick Lamar', 'Snoop Dogg']
 
 def relocate_files(addSOI = True):
@@ -200,7 +200,7 @@ def delete_unfit_versions():
                         if delete:
                                 remove(dataPath + cleanArtistName + "/" + file)
 
-def delete_songs_by_date(yearDifference = 15):
+def delete_songs_by_date(yearDifference = 20):
         for artist in artistNames:
                 year = None
                 if artist == 'Eminem':
@@ -224,11 +224,14 @@ def delete_songs_by_date(yearDifference = 15):
                         if releaseYear is None:
                                 if isfile(dataPath + artist+'/'+songTitle+'.txt'):
                                         remove(dataPath + artist+'/'+songTitle+'.txt')
+                                        print(artist, songTitle, releaseYear)
+
                                 continue
                         releaseYear = releaseYear['year']
-                        if abs(releaseYear - year) > yearDifference or releaseYear is None or (artist == 'Kendrick Lamar' and releaseYear < 2006):
+                        if abs(releaseYear - year) > yearDifference or releaseYear is None:
                                 if isfile(dataPath + artist+'/'+songTitle+'.txt'):
                                         remove(dataPath +artist+'/'+songTitle+'.txt')
+                                        print(artist, songTitle, releaseYear)
 
 
 
@@ -237,11 +240,11 @@ if __name__ == "__main__":
         #delete_unfit_versions()
         #delete_duplicates()
         #delete_songs_by_date()
-        #find_largest_files(250)
+        #find_largest_files(230)
         #relocate_files()
         #delete_small_files(1300)
         relocate_and_group_by_year(False)
-        delete_small_files(5000)
+        delete_small_files(10000)
 
         #artistNames = ['Dr. Dre SOI']
         #relocate_files()

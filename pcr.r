@@ -2,8 +2,8 @@
 
 library("stylo")
 
-setwd("C:/Users/Paul/Desktop/Unistuff/1. sem/dh/HipHop-Stylometry/Data/corpus")
-#setwd("C:/Users/paulk/OneDrive/Desktop/Unistuff/1.sem/dh/HipHop-Stylometry/Data/corpus")
+#setwd("C:/Users/Paul/Desktop/Unistuff/1. sem/dh/HipHop-Stylometry/Data/corpus")
+setwd("C:/Users/paulk/Desktop/Unistuff/1.sem/dh/HipHop-Stylometry/Data/corpus")
 
 tokenized.texts = load.corpus.and.parse(files = "all", corpus.lang = "English.all", preserve.case = "FALSE", ngram.size = 1)
 
